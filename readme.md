@@ -1,5 +1,6 @@
 
 
+'''
    _____        __      __    _  _____                         
   / ____|       \ \    / /   | |/ ____|                        
  | (___  _   _ __\ \  / /   _| | (___   ___ ___  _ __ ___ _ __ 
@@ -8,7 +9,7 @@
  |_____/ \__, |___/ \/  \__,_|_|_____/ \___\___/|_|  \___|_|   
           __/ |                                                
          |___/                                                 
-
+'''
 <div align="center">
 <h2>SysVulScorer — System Vulnerability Scoring Framework</h2>
 
@@ -86,14 +87,15 @@ Built on:
 # 📥 **Installation**
 
 ## 1️⃣ Clone the repository
-```bash
+```
 git clone https://github.com/<your_repo>/SysVulScorer.git
 cd SysVulScorer
-```bash
+```
+
 2️⃣ Install dependencies
-```bash
+```
 pip install -r requirements.txt
-```bash
+```
 
 Or manually:
 '''
@@ -102,14 +104,14 @@ pip install ttkbootstrap pandas matplotlib
 
 Pandas is optional — the program falls back to Python's CSV module.
 
-▶️ Launch the Application
-```bash
+# ▶️ Launch the Application
+```
 python sysvulscorer.py
-```bash
+```
 
-📄 Input Format
+# 📄 Input Format
 
-Your CSV file must include:
+## Your CSV file must include:
 
 Column	Description
 CVSS	   CVSS Base Score
@@ -117,38 +119,38 @@ EPSS	   EPSS Probability (0–1)
 CS	      Cyber System ID
 
 Example:
-```bash
+```
 CVSS,EPSS,CS
 7.8,0.64,System-A
 5.5,0.22,System-B
 9.0,0.80,System-A
-```bash
+```
 
 
-📊 Scoring Formulas
+# 📊 Scoring Formulas
 
-🔹 Adjusted Score
+## 🔹 Adjusted Score
 V = CVSS × Exposure × Maturity
 
-Exposure Switching:
+### Exposure Switching:
 Exposure = Exposure_Exposed       if EPSS ≥ Maturity_Boundary
 Exposure = Exposure_NonExposed    otherwise
 
-Maturity Switching:
+### Maturity Switching:
 Maturity = Maturity_High          if EPSS ≥ Maturity_Boundary
 Maturity = Maturity_Low           otherwise
 
-🔹 Aggregation (per CS)
-X-Formula:
+## 🔹 Aggregation (per CS)
+### X-Formula:
 X = 1 - ∏(1 - V_i / 10)
 
-Max:
+### Max:
 Max = max(V_i)
 
-Average:
+### Average:
 Average = sum(V_i) / len(V_i)
 
-🧪 Sensitivity Analysis
+# 🧪 Sensitivity Analysis
 
 The Sensitivity Tab enables:
 
@@ -168,13 +170,14 @@ Exposure Non-Exposed	0–1	      0.75
 Maturity High	      0–1	      1.0
 Maturity Low	      0–1	      0.75
 Maturity Boundary	   0–1	      0.5
-📂 Output Files
+
+# 📂 Output Files
 File	Description
 *_adjusted.csv	      Adjusted score per vulnerability
 *_aggregated.csv	   Cyber-system aggregated scores
 *_sensitivity.csv	   Exported table from Sensitivity tab
 
-🎨 Themes
+# 🎨 Themes
 
 SysVulScorer includes multiple GUI themes via ttkbootstrap:
 
@@ -191,20 +194,20 @@ cosmo
 minty
 … and more.
 
-📸 Screenshots (Add Yours Here)
+# 📸 Screenshots (Add Yours Here)
 [ Insert screenshots in /screenshots folder and link them here ]
 
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 Feel free to open issues and pull requests.
 
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
 See LICENSE for details.
 
-⭐ Support the Project
+# ⭐ Support the Project
 
 If SysVulScorer helps your workflow, please star ⭐ the repository — it really helps!
 

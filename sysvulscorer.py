@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CyReScoF – Modern GUI with Sensitivity Analysis
+SysVulScorer – Modern GUI with Sensitivity Analysis
 """
 
 import os, json, math
@@ -81,10 +81,10 @@ def aggregate_scores(vlist):
 
 # ------------------ MAIN GUI CLASS ------------------
 
-class CyReScoF_GUI:
+class SysVulScorer_GUI:
     def __init__(self):
         self.settings = load_settings()
-        self.app = tb.Window(title="CyReScoF – Adjusted/Aggregated Scores",
+        self.app = tb.Window(title="SysVulScorer – Adjusted/Aggregated Scores",
                              themename=self.settings["theme"])
         self.app.geometry("1200x720")
 
@@ -113,7 +113,7 @@ class CyReScoF_GUI:
         frm = tb.Frame(self.main_tab, padding=10)
         frm.pack(fill="both", expand=True)
 
-        tb.Label(frm, text="CyReScoF Formulas",
+        tb.Label(frm, text="SysVulScorer Formulas",
                  font=("Segoe UI", 14, "bold")).pack(anchor="w", pady=5)
 
         eq_text = (
@@ -512,5 +512,5 @@ class CyReScoF_GUI:
 # ------------------ MAIN ------------------
 
 if __name__ == "__main__":
-    gui = CyReScoF_GUI()
+    gui = SysVulScorer_GUI()
     gui.run_loop()
