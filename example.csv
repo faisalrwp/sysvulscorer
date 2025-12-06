@@ -1,0 +1,9 @@
+CVSS,EPSS,CS
+9.8,0.87,Finance-Core
+8.2,0.63,Finance-Core
+6.5,0.28,HR-Portal
+4.2,0.15,HR-Portal
+7.7,0.45,IoT-Gateway
+5.0,0.12,Backup-Server
+9.1,0.52,Customer-API
+3.5,0.08,Customer-API
