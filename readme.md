@@ -161,21 +161,22 @@ Aggregated score recalculation
 Export button for saving test scenarios
 
 Sliders allow adjusting:
-'''
-Parameter	         Range	      Default
-Exposure Exposed	   0–1	      1.0
-Exposure Non-Exposed	0–1	      0.75
-Maturity High	      0–1	      1.0
-Maturity Low	      0–1	      0.75
-Maturity Boundary	   0–1	      0.5
-'''
+
+|Parameter	         |Range	      |Default|
+|--|--|--|
+|Exposure Exposed	   |0–1	      |1.0|
+|Exposure Non-Exposed	|0–1	      |0.75|
+|Maturity High	      |0–1	      |1.0|
+|Maturity Low	      |0–1	      |0.75|
+|Maturity Boundary	|   0–1	      |0.5|
+
 # 📂 Output Files
-'''
-File	               Description
-*_adjusted.csv	      Adjusted score per vulnerability
-*_aggregated.csv	   Cyber-system aggregated scores
-*_sensitivity.csv	   Exported table from Sensitivity tab
-'''
+
+|File	               |Description|
+|--|--|
+|*_adjusted.csv	    |  Adjusted score per vulnerability|
+|*_aggregated.csv	   |Cyber-system aggregated scores|
+|*_sensitivity.csv	 |  Exported table from Sensitivity tab|
 
 # 🎨 Themes
 
