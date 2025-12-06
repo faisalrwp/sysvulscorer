@@ -1,4 +1,4 @@
-<div align="center">
+
 
    _____        __      __    _  _____                         
   / ____|       \ \    / /   | |/ ____|                        
@@ -9,6 +9,7 @@
           __/ |                                                
          |___/                                                 
 
+<div align="center">
 <h2>SysVulScorer — System Vulnerability Scoring Framework</h2>
 
 ![status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
@@ -88,10 +89,11 @@ Built on:
 ```bash
 git clone https://github.com/<your_repo>/SysVulScorer.git
 cd SysVulScorer
-
+```bash
 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-
+```bash
 
 Or manually:
 '''
@@ -101,22 +103,30 @@ pip install ttkbootstrap pandas matplotlib
 Pandas is optional — the program falls back to Python's CSV module.
 
 ▶️ Launch the Application
+```bash
 python sysvulscorer.py
+```bash
+
 📄 Input Format
 
 Your CSV file must include:
 
 Column	Description
-CVSS	CVSS Base Score
-EPSS	EPSS Probability (0–1)
-CS	Cyber System ID
+CVSS	   CVSS Base Score
+EPSS	   EPSS Probability (0–1)
+CS	      Cyber System ID
+
 Example:
+```bash
 CVSS,EPSS,CS
 7.8,0.64,System-A
 5.5,0.22,System-B
 9.0,0.80,System-A
+```bash
+
 
 📊 Scoring Formulas
+
 🔹 Adjusted Score
 V = CVSS × Exposure × Maturity
 
@@ -152,17 +162,18 @@ Export button for saving test scenarios
 
 Sliders allow adjusting:
 
-Parameter	Range	Default
-Exposure Exposed	0–1	1.0
-Exposure Non-Exposed	0–1	0.75
-Maturity High	0–1	1.0
-Maturity Low	0–1	0.75
-Maturity Boundary	0–1	0.5
+Parameter	         Range	      Default
+Exposure Exposed	   0–1	      1.0
+Exposure Non-Exposed	0–1	      0.75
+Maturity High	      0–1	      1.0
+Maturity Low	      0–1	      0.75
+Maturity Boundary	   0–1	      0.5
 📂 Output Files
 File	Description
-*_adjusted.csv	Adjusted score per vulnerability
-*_aggregated.csv	Cyber-system aggregated scores
-sensitivity_export.csv	Exported table from Sensitivity tab
+*_adjusted.csv	      Adjusted score per vulnerability
+*_aggregated.csv	   Cyber-system aggregated scores
+*_sensitivity.csv	   Exported table from Sensitivity tab
+
 🎨 Themes
 
 SysVulScorer includes multiple GUI themes via ttkbootstrap:
@@ -197,7 +208,5 @@ See LICENSE for details.
 
 If SysVulScorer helps your workflow, please star ⭐ the repository — it really helps!
 
-
----
 
 # ✅ DONE!
