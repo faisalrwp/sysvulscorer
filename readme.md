@@ -105,10 +105,11 @@ python sysvulscorer.py
 
 ## Your CSV file must include:
 
-Column	Description
-CVSS	   CVSS Base Score
-EPSS	   EPSS Probability (0–1)
-CS	      Cyber System ID
+|Column	|Description     |
+|-------|-----------------|
+|CVSS	  | CVSS Base Score |
+|EPSS	  |EPSS Probability (0–1)|
+|CS	  | Cyber System ID |
 
 Example:
 ```
