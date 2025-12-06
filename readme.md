@@ -1,15 +1,6 @@
 
 
-'''
-   _____        __      __    _  _____                         
-  / ____|       \ \    / /   | |/ ____|                        
- | (___  _   _ __\ \  / /   _| | (___   ___ ___  _ __ ___ _ __ 
-  \___ \| | | / __\ \/ / | | | |\___ \ / __/ _ \| '__/ _ \ '__|
-  ____) | |_| \__ \\  /| |_| | |____) | (_| (_) | | |  __/ |   
- |_____/ \__, |___/ \/  \__,_|_|_____/ \___\___/|_|  \___|_|   
-          __/ |                                                
-         |___/                                                 
-'''
+
 <div align="center">
 <h2>SysVulScorer — System Vulnerability Scoring Framework</h2>
 
@@ -22,6 +13,16 @@
 </div>
 
 ---
+
+<tt>   _____        __      __    _  _____                         </tt>
+<tt>  / ____|       \ \    / /   | |/ ____|                        </tt>
+<tt> | (___  _   _ __\ \  / /   _| | (___   ___ ___  _ __ ___ _ __ </tt>
+<tt>  \___ \| | | / __\ \/ / | | | |\___ \ / __/ _ \| '__/ _ \ '__|</tt>
+<tt>  ____) | |_| \__ \\  /| |_| | |____) | (_| (_) | | |  __/ |   </tt>
+<tt> |_____/ \__, |___/ \/  \__,_|_|_____/ \___\___/|_|  \___|_|   </tt>
+<tt>          __/ |                                                </tt>
+<tt>         |___/                                                 
+
 
 # 🌐 **Overview**
 
@@ -98,6 +99,7 @@ pip install -r requirements.txt
 ```
 
 Or manually:
+
 '''
 pip install ttkbootstrap pandas matplotlib
 '''
@@ -121,9 +123,14 @@ CS	      Cyber System ID
 Example:
 ```
 CVSS,EPSS,CS
-7.8,0.64,System-A
-5.5,0.22,System-B
-9.0,0.80,System-A
+9.8,0.87,Finance-Core
+8.2,0.63,Finance-Core
+6.5,0.28,HR-Portal
+4.2,0.15,HR-Portal
+7.7,0.45,IoT-Gateway
+5.0,0.12,Backup-Server
+9.1,0.52,Customer-API
+3.5,0.08,Customer-API
 ```
 
 
@@ -163,19 +170,21 @@ Aggregated score recalculation
 Export button for saving test scenarios
 
 Sliders allow adjusting:
-
+'''
 Parameter	         Range	      Default
 Exposure Exposed	   0–1	      1.0
 Exposure Non-Exposed	0–1	      0.75
 Maturity High	      0–1	      1.0
 Maturity Low	      0–1	      0.75
 Maturity Boundary	   0–1	      0.5
-
+'''
 # 📂 Output Files
-File	Description
+'''
+File	               Description
 *_adjusted.csv	      Adjusted score per vulnerability
 *_aggregated.csv	   Cyber-system aggregated scores
 *_sensitivity.csv	   Exported table from Sensitivity tab
+'''
 
 # 🎨 Themes
 
@@ -195,7 +204,9 @@ minty
 … and more.
 
 # 📸 Screenshots (Add Yours Here)
-[ Insert screenshots in /screenshots folder and link them here ]
+[ Coming Soom ]
+
+---
 
 # 🤝 Contributing
 
@@ -213,3 +224,4 @@ If SysVulScorer helps your workflow, please star ⭐ the repository — it reall
 
 
 # ✅ DONE!
+---
